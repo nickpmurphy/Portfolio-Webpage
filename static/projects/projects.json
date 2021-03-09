@@ -1,0 +1,47 @@
+{
+  "projects": [
+
+    {
+      "name": "Element AI",
+      "link": "element",
+
+      "short": "Created an AI to play popular board game, Element, using variations of a minimax algorithm with alpha-beta pruning.",
+      "weight": 8,
+      "tags": [
+        "python"
+      ],
+      "photos": [
+        "/static/projects/element/element.png"
+      ],
+      "github": "https://github.iu.edu/dnn1/Element"
+    },
+    {
+      "name": "Promotional Short for Small Business",
+      "link": "short",
+      "short": "Shot & edited a short film for social media promotion during the pandemic.",
+      "weight": 9,
+      "tags": [
+        "Final Cut Pro X",
+        "media"
+      ],
+      "videos": [
+        "<iframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/watch?v=-54Hx19hV4w\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "/static/projects/short/lgg.jpg"
+      ]
+    },
+    {
+      "name": "COVID-19 Simulator",
+      "link": "covid",
+      "short": "Created a COVID-19 Simulator using Java.",
+      "weight": 9,
+      "tags": [
+        "java"
+      ],
+      "photos": [
+        "/static/projects/covid/covid.png"
+      ]
+    }
+  ]
+}

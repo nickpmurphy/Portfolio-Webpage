@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper">
+        <section id="terminal">
+            <div id="terminal-container">
+                <div class="terminal">
+                    <div class="window-title">
+                        <div class="win-buttons">
+                            <a id="close" class="button" href="#"></a>
+                            <a id="min" class="button" href="#"></a>
+                            <a id="max" class="button" href="#"></a>
+                        </div>
+                        <span class="title">oh-my-zsh</span>
+                    </div>
+                    <div class="message">
+                        <span class='prompt'><span class='user'>nickmurphy</span><span class="at">@</span><span
+                                class="path">Library/Users/</span>><span class="caret">$</span></span>
+                        <span class="typed"></span>
+                        <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"/></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper scroll-wrapper">
+        <div class="top-text">
+            <p class="text-title desktop-view">Nick</p>
+            <p class="text-title desktop-view">Murphy</p>
+            <p class="text-title mobile-view">Nick Murphy</p>
+            <div class="social-icons">
+                <a target="_blank" href="https://github.com/nickpmurphy">
+                    <img class="title-logo" src="static/images/github.svg">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/nickxmurphy/">
+                    <img class="title-logo" src="static/images/linkedin-logo.svg">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/nickxmurphy/">
+                    <img class="title-logo" src="static/images/insta.svg">
+                </a>
+            </div>
+        </div>
+        <div class="middle-text">
+            <p class="text-content"> I am getting ready to complete my undergraduate degree at Indiana University in early May. 
+                I am graduating with a BA in Digital and Interactive Media with a focus in web specialization. 
+                I will also be receiving a certificate in Informatics from the LSICE school. 
+                I chose to take a number of computer science courses as well, as I believe programming is a necessary language for any 21st century student seeking to start a career. </p>
+            <p class="text-content">
+                Throughout my 4 years of college, I’ve realized my passion for the industry that utilizes technology to produce results. 
+                I am passionate about solving problems and applying technology to further the effectiveness of profitable business models. 
+                I have a passion for technology, something about it has always sparked my interest. 
+                I think the opportunities that data-driven business provide are endless. </p>
+
+            <p class="text-content">
+                I’ve been lucky enough to have experiences outside of school that have helped shape my education and my mindset towards building a career. 
+            </p>
+
+            <p class="text-content">I chose to work at a <a href="http://www.locallygrowngardens.co">small business</a>. during high school, and some of my college years. 
+                As acting manager, I learned the ins and outs of business in my boss’s absence. At 19 I ran a small bakery/farmers’ market, managing coworkers both older and younger than myself, for nearly 5 months. 
+            </p>
+
+            <p class="text-content">Through this job I was able to land an internship working for world renowned <a href="https://walterknabe.com">Walter Knabe</a>. 
+                A two-person team plus an intern led to a very intimate work environment, one that gave me insight into the culture of creative artists. 
+                I learned how to screen print and all of the necessary Adobe techniques needed to construct an art piece from beginning to finish. 
+                I also learned the basics of sales, social media marketing, and business analytics. </p>
+
+            <p class="text-content">In April 2019, my cousin and I decided to venture into sales in the hand sanitizer industry. 
+                While we saw prices skyrocketing online and supplies diminishing in local stores, we got in contact with a local distillery that had pivoted to hand sanitizer manufacturing during the pandemic. 
+                We wanted to provide people and businesses with an affordable disinfectant, one that supported local businesses. 
+                We built a website, launched analytics and began a <a href="https://www.facebook.com/AtHomeHealth">social media campaign</a>. 
+                Day-to-day tasks included cold calling local businesses trying to secure contracts. </p>
+
+            <p class="text-content">By August 2020 we had successfully sold to 10+ businesses, one of which was the Indianapolis Children’s Museum. 
+            We were able to use our profits to donate hand sanitizer directly to the <a href="https://www.facebook.com/AtHomeHealth/posts/128867725471786">Bloomington Salvation Army</a>.</p>
+
+            <p class="text-content">You can find me on <a href="https://www.linkedin.com/in/nickxmurphy/">LinkedIn</a>,
+                or email me <a href="mailto:nickmurphy0922@gmail.com" target="_top">here</a>.
+            </p>
+
+            <p class="text-content">Let's get in touch!</p>
+
+            <p class="text-content">Nick Murphy</p>
+
+
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
